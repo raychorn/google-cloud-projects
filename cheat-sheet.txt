@@ -1,0 +1,27 @@
+BUCKET=bucket-qwiklabs-gcp-04-f1ae287901d2
+echo $BUCKET
+
+DEVSHELL_PROJECT_ID=qwiklabs-gcp-04-f1ae287901d2
+echo $DEVSHELL_PROJECT_ID
+
+
+cd ./training-data-analyst/courses/data_analysis/lab2/python
+
+python3 JavaProjectsThatNeedHelp.py --bucket $BUCKET --project $DEVSHELL_PROJECT_ID --DirectRunner
+
+BUCKET="bucket-qwiklabs-gcp-04-f1ae287901d2"
+echo $BUCKET
+
+python3 JavaProjectsThatNeedHelp.py --bucket $BUCKET --project $DEVSHELL_PROJECT_ID --DataFlowRunner
+
+=============================================
+
+BUCKET="bucket-qwiklabs-gcp-02-e3a126373075"
+echo $BUCKET
+
+DEVSHELL_PROJECT_ID=qwiklabs-gcp-02-e3a126373075
+echo $DEVSHELL_PROJECT_ID
+
+./run_oncloud3.sh $DEVSHELL_PROJECT_ID $BUCKET JavaProjectsThatNeedHelp
+
+gcloud auth application-default login

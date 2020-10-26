@@ -36,8 +36,8 @@ public class Grep {
 		PipelineOptions options = PipelineOptionsFactory.fromArgs(args).withValidation().create();
 		Pipeline p = Pipeline.create(options);
 
-		String input = "src/main/java/com/google/cloud/training/dataanalyst/javahelp/*.java";
-		String outputPrefix = "/tmp/output";
+		String input = "gs://bucket-qwiklabs-gcp-04-375dff324360/javahelp/*.java";
+		String outputPrefix = "gs://bucket-qwiklabs-gcp-04-375dff324360/javahelp/output";
 		final String searchTerm = "import";
 
 		p //

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install python3-pip
-sudo pip3 install apache-beam[gcp]
-sudo pip3 install oauth2client==3.0.0
-sudo pip3 install -U pip
+#ae oiapt-get nstall ppyohoi3-pc
+pip install "apache-beam[gcp]"
+pip33 installoouth2cli2nt==3.0.0.0
+pip3 install -U p
